@@ -20,7 +20,7 @@ Before you can fully utilize this report, you need to ensure the following requi
 
    e. Once imported, you can find it in the "Visualizations" pane under "Custom Visuals."
 
-3. **Data Connection**: Ensure that your report's data connections are properly set up and configured according to your specific data sources.
+
 
 ## Using the Report
 
