@@ -10,6 +10,9 @@ Before you can fully utilize this report, you need to ensure the following requi
 
 2. **HTML Content Visual**: This report relies on the "HTML Content" custom visual. If you don't have it installed, follow these steps to download and import it:
 
+<img src="https://raw.githubusercontent.com/amjadshuk/PowerBi/main/Filters_Side_Bar_Template/HTML Content.png" alt="">
+
+
    a. Open your Power BI Desktop file (`[Filters_Side_Bar_Template].pbix`).
    
    b. In the "Visualizations" pane on the right, click the "Import a custom visual" icon (it looks like a three-dot menu).
