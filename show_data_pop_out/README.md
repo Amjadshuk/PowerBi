@@ -44,7 +44,7 @@ If you'd like to contribute to this project, please follow these steps:
 
 ## Issues
 
-If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/your-repo-link/issues) on this repository.
+If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/Amjadshuk/PowerBi/issues) on this repository.
 
 ## License
 
