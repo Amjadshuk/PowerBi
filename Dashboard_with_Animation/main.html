@@ -1,0 +1,100 @@
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Amjad Al Shukairi background</title>
+
+
+  <!--styles-->
+  <style>
+    html{
+      overflow: hidden;
+    }
+    body{
+      margin: 0;
+      transition: all 3s ease-out;
+    }
+    .layer{
+      position: absolute; 
+      transition: all 1s ease-out;
+      transform-origin: 0% 0%;
+      width: 100%;
+      height: 100%;
+      border: none;
+      animation: rotate 20s linear infinite;
+     
+    }
+
+    @keyframes rotate {
+      0%{rotate: 0;
+       opacity: 0; }
+      100%{rotate: 360deg;
+        opacity: 100%;}
+      
+    }
+
+    .picont{
+      min-width: 150px;
+      width: 15vw;
+      height: 30vh;
+      background: white;
+      border-radius: 2vh;
+      z-index: 1;
+      position: absolute;
+      margin: 4vh;
+      box-shadow: 0 0 0.5vh 0.0vh black;
+  
+    }
+  
+  </style>
+  <!--styles-->
+</head>
+<body>
+ 
+
+  
+  <div class='layer' id='layer1'></div>
+  <div class='layer' id='layer2'></div>
+  <div class='layer' id='layer3'></div>
+
+  <script>
+function generateRandomNumber() {
+  return Math.floor(Math.random() * 181);
+}
+function generateRandomP() {
+  return Math.floor(Math.random() * 101);
+}
+    function generateRandomHexColor() {
+  // Generate a random number between 0 and 16777215
+  const randomColor = Math.floor(Math.random() * 16777215);
+  
+  // Convert the random number to a hexadecimal string
+  const hexColor = randomColor.toString(16);
+  
+  // Pad the hexadecimal color code with zeros if needed
+  const paddedHexColor = hexColor.padStart(6, '0');
+  
+  // Return the random hex color code
+  return `#${paddedHexColor}`;
+}
+
+
+
+
+setInterval(async() => {
+  
+  [document.getElementById('layer1'),document.getElementById('layer2'),document.getElementById('layer3')].forEach((v,i,a)=>{
+
+    v.style.background = `linear-gradient(${generateRandomNumber()}deg, transparent, ${generateRandomHexColor()}, transparent, transparent)`
+    v.style.transformOrigin = `${generateRandomP()}% ${generateRandomP()}%` 
+    v.style.animation = `rotate ${generateRandomP()}s linear infinite`
+
+  })
+
+  document.body.style.background = generateRandomHexColor()
+
+
+}, 1500);
+  </script>
+</body>
+</html>
