@@ -1,4 +1,4 @@
-# Power BI Dashboard README
+# Power BI Dashboard with (JS & CSS Content) README
 
 Welcome to the Power BI Dashboard repository! This repository contains a Power BI dashboard project named "Dashboard_with_Animation.pbix" that includes animated visualizations and custom HTML content. To fully utilize this dashboard, please follow the steps outlined below, including the addition of the "ParaHTMLViewer" custom visual and base64 encoding of your HTML content.
 
